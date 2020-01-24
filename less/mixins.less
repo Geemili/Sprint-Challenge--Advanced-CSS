@@ -1,1 +1,36 @@
 // Mixins Here
+
+.displayFlex(@justify; @align: center; @dir: row) {
+    display: flex;
+    justify-content: @justify;
+    align-items: @align;
+    flex-direction: @dir;
+}
+
+.fullWidthMobile() {
+    @media @phone {
+        width: 100%;
+    }
+}
+
+.button(@fg-color; @bg-color) {
+    color: @fg-color;
+    background-color: @bg-color;
+    border-radius: 5px;
+    display: block;
+    width: 30%;
+    text-align: center;
+    font-weight: bold;
+    font-size: 1.6rem;
+    padding: 2%;
+
+    &:hover {
+        color: @bg-color;
+        background-color: @fg-color;
+    }
+
+    @media @phone {
+        width: 100%;
+        padding: 3%;
+    }
+}

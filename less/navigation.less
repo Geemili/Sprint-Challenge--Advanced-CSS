@@ -1,1 +1,33 @@
 // Navigation code here
+
+nav {
+    .displayFlex(@justify: center; @dir: column);
+    background-color: @nav-bg;
+    border-bottom: 1px solid @nav-border;
+
+    h1 {
+        font-size: 5rem;
+        padding: 10px;
+
+        @media @phone {
+            font-size: 3.5rem;
+        }
+    }
+
+    .links {
+        .displayFlex(center);
+        width: 100%;
+        max-width: @content-max-width;
+    }
+
+    a {
+        padding: 2% 3%;
+        text-decoration: none;
+        font-size: @nav-font-size;
+        color: @nav-font;
+
+        @media @phone {
+            font-size: @nav-font-size * 0.8;
+        }
+    }
+}
