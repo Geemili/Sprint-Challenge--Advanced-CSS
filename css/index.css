@@ -173,6 +173,11 @@ nav h1 {
   font-size: 5rem;
   padding: 10px;
 }
+@media ( max-width: 500px ) {
+  nav h1 {
+    font-size: 3.5rem;
+  }
+}
 nav .links {
   display: flex;
   justify-content: center;
@@ -186,6 +191,11 @@ nav a {
   text-decoration: none;
   font-size: 2rem;
   color: #454A59;
+}
+@media ( max-width: 500px ) {
+  nav a {
+    font-size: 1.6rem;
+  }
 }
 footer {
   color: #22283B;
